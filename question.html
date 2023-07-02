@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question</title>
+</head>
+
+<body style="background-color: cadetblue; color: black;">
+
+    <h4 style=" text-align: center;">Question Number 1</h4>
+    <h3 style=" text-align: center;">The Difference Between Map,Filter,forEach and Find?</h3>
+    <h2>
+        <P style="color: lawngreen;">ANS :</P>
+
+        map, filter, forEach, and find are all array methods in JavaScript that operate on arrays and return a new array
+        or a single value. The main differences between them are: <br><br>
+
+        1.<span style="background-color: red; color: white;">map</span>: returns a new array with the same length as the
+        original
+        array, where each element is the result of
+        applying a callback function to the corresponding element in the original array.
+        <br><br>
+
+        2.<span style="background-color: red; color: white;">filter</span>: returns a new array containing all elements
+        of the original array that satisfy a certain condition
+        defined by a callback function.
+        <br><br>
+
+        3.<span style="background-color: red; color: white;">forEach</span>: calls a callback function for each element
+        in the array, but does not return a new array.
+        <br><br>
+
+        4.<span style="background-color: red; color: white;">find</span>: returns the first element in the array
+        that satisfies a certain condition defined by a callback
+        function, or undefined if no such element is found.
+
+
+
+
+    </h2>
+    <br>
+
+    <h4 style=" text-align: center;">Question Number 2</h4>
+
+    <h3 style=" text-align: center;">What Is The Difference Between Local Storage , Session Storage And Cookies?</h3>
+    <h2>
+        <p style="color: lawngreen;">ANS :</P>
+
+        1. <span style="background-color: red; color: white;">Local Storage</span>:
+        Local storage is a client-side storage mechanism that allows web applications to store data on a user's device
+        without any expiration date. The data is stored as key-value pairs, and can only be accessed by scripts on the
+        same domain. Local storage has a much larger storage capacity than cookies, with most browsers supporting up to
+        10MB of data.
+        <br><br>
+        2.<span style="background-color: red; color: white;">Session Storage</span>:
+        Session storage is similar to local storage, but the data is cleared once the user closes the browser window. It
+        is useful for storing data that needs to be accessed during a user's session on a website, but does not need to
+        persist beyond that session. Like local storage, session storage has a larger storage capacity than cookies,
+        with most browsers supporting up to 10MB of data.
+
+        In summary, cookies are used to store small amounts of data with a defined expiration date, while local storage
+        and session storage provide larger storage capacity and do not have expiration dates (or have one tied to a
+        session). Local storage is meant for long-term storage while session storage is useful for short-term storage
+        within a session.
+        <br><br>
+        3. <span style="background-color: red; color: white;">Cookies</span>:
+        Cookies are small text files that are created by a website and stored on the user's device. They are used to
+        store user preferences, login information, and other data that can be accessed by both the client-side and
+        server-side scripts. Cookies have a lifespan, which is determined by the expiration date set by the website.
+        They can be set to either be persistent (which means that they will remain on the user's device even after they
+        close the browser) or session-based (which means that they will be deleted once the browser is closed). Cookies
+        have a limited storage capacity of 4KB. <br><br>
+        In summary, cookies are used to store small amounts of data with a defined expiration date, while local storage
+        and session storage provide larger storage capacity and do not have expiration dates (or have one tied to a
+        session). Local storage is meant for long-term storage while session storage is useful for short-term storage
+        within a session.
+
+
+    </h2>
+    <br>
+    <h4 style=" text-align: center;">Question Number 3</h4>
+
+    <h3 style=" text-align: center;">What Is Event Loop? How Does It Work?</h3>
+    <h2>
+        <p style="color: lawngreen;">ANS :</P>
+
+        The event loop is a fundamental part of JavaScript's concurrency model, and it's responsible for managing the
+        execution of asynchronous tasks in a single-threaded environment.The event loop has two main components: the
+        call stack and the task queue. The call stack is a data structure that keeps track of the execution context of
+        the currently executing code. When a function is called, its execution context is pushed onto the call stack,
+        and when it returns, its context is popped off the stack.By using the event loop, JavaScript can handle multiple
+        asynchronous tasks concurrently without blocking the execution of other code. It allows developers to write
+        non-blocking code that is efficient and scalable. However, it's important to understand how the event loop works
+        to avoid common pitfalls, such as blocking the event loop with long-running tasks or creating infinite loops.
+        <br>
+        <P style="text-align: center;">Example of Event Loop : <br><br>
+
+            console.log('start'); <br>
+
+            setTimeout(() => {
+            console.log('setTimeout');
+            }, 0);<br>
+
+            Promise.resolve().then(() => {
+            console.log('promise');<br>
+            });<br>
+
+            console.log('end');<br>
+        </P>
+        <br><br>
+    </h2>
+
+    <h4 style=" text-align: center;">Question Number 4</h4>
+
+    <h3 style=" text-align: center;">What Is QuizTimer?</h3>
+    <h2>
+        <p style="color: lawngreen;">ANS :</P>
+
+        <span style="background-color: red; color: white;">quizTimer </span> is not a built-in feature or function
+        in JavaScript, but it could refer to a variable or function that is used to implement a timer in a quiz
+        application.
+
+        In a quiz application, a timer could be used to limit the amount of time a user has to answer each question.
+        The timer could be displayed on the screen, and when it reaches zero, the user's answer is automatically
+        submitted, and the next question is displayed.
+    </h2>
+
+    <h4 style=" text-align: center;">Question Number 5</h4>
+
+    <h3 style=" text-align: center;">What is the way to use ChooseQuiz?</h3>
+    <h2>
+        <p style="color: lawngreen;">ANS :</P>
+
+        Without seeing the code or context in which the choosequiz function is used, it's difficult to say exactly what
+        its purpose is. However, I can provide some general information about functions and their potential use cases in
+        a quiz application.In a quiz application, the choosequiz function could be used to allow the user to select a
+        quiz from a list of available quizzes. The function might display a menu of quiz options and wait for the user
+        to make a selection. Once the user has made a selection, the function could return the ID or name of the chosen
+        quiz to the main program, which would then load the corresponding questions and begin the quiz.
+    </h2>
+
+
+
+
+
+
+</body>
+
+</html>
